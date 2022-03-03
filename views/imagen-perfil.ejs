@@ -1,0 +1,24 @@
+<main class="contenedor contenedor-formularios no-padding">
+ <h1><%= nombrePagina %> </h1>
+ <form method='POST' class="default-form" enctype="multipart/form-data">
+  <div class="campo">
+   <label>Imagen</label>
+   <input type="file" name="imagen">
+  </div>
+  <% if (usuario.imagen) { %>
+  <div class="campo">
+   <label>Imagen Actual</label>
+   <img src="/uploads/perfiles/<%= usuario.imagen %>" width="200">
+  </div>
+  <% } else { %>
+  <div class="campo">
+
+   <p>Aun no tienes ninguna imagen guardada</p>
+  </div>
+  <% } %>
+  <div class="campo enviar" style='justify-content: center'>
+   <a href="/administracion" class='btn btn-rosa' style='margin-right: 1.5rem;'>Cancelar</a>
+   <input type="submit" value="Subir Imagen" class='btn btn-azul'>
+  </div>
+ </form>
+</main>
