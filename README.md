@@ -27,7 +27,7 @@ In this project you can publish meetings and groups to chat about a specific top
 
 ##### `docker-compose up -d`
 
-##### `docker logs --follow container`
+##### `docker logs --follow meeti-app`
 * Wait the database is connected
 
 ##### `visit into browser http:\\localhost:3000/`
